@@ -1,4 +1,4 @@
-let images = ['img/calleri.jpg','img/arboleda.jpg','img/ceni.jpg','img/dani.jpeg','img/ferraresi.jpg','img/hernanes.jpg','img/james.jpeg',
+let images = ['img/calleri.jpg','img/arboleda.jpg','img/ceni.jpg','img/ferraresi.jpg','img/hernanes.jpg','img/james.jpeg',
     'img/lucas.jpg','img/luciano.jpg','img/michel.jpg','img/nestor.png']
 function gerar()
 {
@@ -22,11 +22,7 @@ function validar(escolhido)
         document.getElementById(escolhido).src = 'img/yessir.png'
         alert('Acertou mizeravi')
         gerar()
-    } else if (jogador === 'dani.jpeg' && (escolhido === 'brasil')) {
-        document.getElementById(escolhido).src = 'img/yessir.png'
-        alert('Acertou mizeravi')
-        gerar()
-    } else if (jogador === 'ferraresi.jpg' && (escolhido === 'venezuela' || escolhido === 'cdb')) {
+    }  else if (jogador === 'ferraresi.jpg' && (escolhido === 'venezuela' || escolhido === 'cdb')) {
         document.getElementById(escolhido).src = 'img/yessir.png'
         alert('Acertou mizeravi')
         gerar()
