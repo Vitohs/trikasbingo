@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Spfc grid</title>
+</head>
+<body>
+    <h1>
+        São Paulo Futebol Clube Bingo
+    </h1>
+
+    <img id="imgjogador" src="" alt="Jogador">
+
+    <button type="submit" onclick="gerar()">Next</button>
+
+    <div id="bingo-container">
+        <img src="img/flag-6509488_960_720.png" id="brasil" class="bingo-img" onclick="validar('brasil')">
+        <img src="img/Flag_of_Colombia.svg.png" id="colombia" class="bingo-img" onclick="validar('colombia')">
+        <img src="img/images (1).png" id="equador" class="bingo-img" onclick="validar('equador')">
+        <img src="img/images.png" id="uruguai" class="bingo-img" onclick="validar('uruguai')">
+        <img src="img/argentina.png" id="argentina" class="bingo-img" onclick="validar('argentina')">
+        <img src="img/Venezuela-1111x740.jpg" id="venezuela" class="bingo-img" onclick="validar('venezuela')">
+        <img src="img/logo.jpg" id="liberta" class="bingo-img" onclick="validar('liberta')">
+        <img src="img/Logo-Copa-do-Brasil.png" id="cdb" class="bingo-img" onclick="validar('cdb')">
+        <img src="img/brasileiro.png" id="brasileiro" class="bingo-img" onclick="validar('brasileiro')">
+        <img src="img/mundial.png" id="mundial" class="bingo-img" onclick="validar('mundial')">
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>
