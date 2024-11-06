@@ -9,7 +9,7 @@ body
 {
     background-color: black;
 }
-h1
+h1,h2
 {
     color: white;
     text-align: center;
@@ -31,6 +31,30 @@ button
     padding: 10px 20px;
     background-color: rgb(171, 18, 18);
     color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.oii
+{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.oii:hover
+{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #250902;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -66,4 +90,40 @@ button:hover
     border-radius: 10px;
     cursor: pointer;
 }
-
+p
+{
+    font-size: 20px;
+    color: white;
+    margin-left: 5%;
+}
+.capa
+{
+    background-color: #640d14;
+    width: 60%;
+    height: 60vh;
+    margin-left: 20%;
+    margin-top: 5%;
+    border: 2px solid #710000;
+    border-radius: 3%;
+}
+input
+{
+    display: block;
+    flex-direction: column;
+    margin-top: 1%;
+    color: white;
+}
+#binladen
+{
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 1%;
+    text-align: center;
+}
+label
+{
+    color: white;
+    margin-left: 4%;
+}
