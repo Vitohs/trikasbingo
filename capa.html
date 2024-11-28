@@ -11,10 +11,13 @@
         <h1>Bem vindo ao Spfc Bingo!</h1>
         <h2>selecione uma dificuldade</h2>
         <form id="buttons">
-            <input type="radio" name="trikas" value="0"><label class="inf">Tempo Infinito</label><br>
-            <input type="radio" name="trikas" value="1"><label class="90">90s</label><br>
-            <input type="radio" name="trikas" value="2"><label class="60">60s</label><br>
-            <input type="radio" name="trikas" value="3"><label class="30">30s</label><br>
+          <select name="opcoes" id="opcao">
+            <option value="" disabled selected>Escolha a dificuldade...</option>
+            <option value="infinito">Tempo infinito</option> 
+            <option value="90">90 segundos</option>
+            <option value="60">60 segundos</option>
+            <option value="30">30 segundos</option>
+          </select>
             <button onclick="direcaog()" class="oii" type="submit">Jogar</button>
         </form> 
     </div>

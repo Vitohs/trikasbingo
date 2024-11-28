@@ -1,19 +1,30 @@
 //array que guardará todas as imagens dos jogadores
 let images = ['img/calleri.jpg','img/arboleda.jpg','img/ceni.jpg','img/ferraresi.jpg','img/hernanes.jpg','img/james.jpeg',
     'img/lucas.jpg','img/luciano.jpg','img/michel.jpg','img/nestor.png']
-let i = 0
-let j = 0
-let A = 60
+let i = 0 // numero de imagens existente
+let j = 0 // numero de acertos (caso ele passe o numero de imagem, eu reseto ai ele vai acertando sem ter que zerar a sua sequencia)
+let selectedDifficulty = localStorage.getItem('selectedDifficulty') //olha o pacote ai, chegou
+let tempo // tempo
+//fazendo as posiveis escolhas que ele clicou na pagina anterior
+if(selectedDifficulty === 'infinito')
+{
+    tempo = Infinity
+}
+else 
+{ 
+    tempo = parseInt(selectedDifficulty) 
+}
+// o laranja que vai receber o tempo sendo decrementado
 let osama = document.getElementById("binladen");
 let timer
 function startTimer() 
 {
-    if (A > 0) 
+    if (tempo > 0) 
     {
         timer = setInterval(function () 
         {
-            osama.innerHTML = A--
-            if (A == 0) 
+            osama.innerHTML = tempo--
+            if (tempo == 0) // curioso que se o tempo for 2 esse safado ja zera
             {
                 clearInterval(timer)
                 alert("tempo esgotado")
@@ -22,7 +33,9 @@ function startTimer()
         }, 1000)
     }
 }
+//startando o tempo
 startTimer()
+// gerando de forma procedural as imagens
 function gerar()
 {
     var ramdom = Math.floor(Math.random() * images.length)
@@ -150,10 +163,18 @@ function streak()
 //direcionando a pessoa que esta na home para entrar no jogo
 function direcaog()
 {
-    let escolheu = document.getElementById('trikas').value
+    //evento vai rolar quando o botão for 'clicado'
     document.getElementById("buttons").addEventListener("submit", function(event) 
     {
-        event.preventDefault()
+        event.preventDefault(); 
+        //registrando constante para obter informação do select da pagina capa
+        const selectElement = document.getElementById('opcao'); 
+        //constante para extrair o valor
+        const selectedValue = selectElement.value;
+        //faço isso para poder usar la em cima do script, como se fosse eu embalando essa variavel numa caixa
+        //coloco no elevador o pacote ai ele sobe la no ultimo andar e a pessoa que pediu recebe e pode usar
+        localStorage.setItem('selectedDifficulty', selectedValue)
+        // direcionando para a tela de jogo por fim
         window.location.href = "jogo.html"
     })
 }
