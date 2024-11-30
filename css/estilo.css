@@ -100,9 +100,9 @@ p
 {
     background-color: #640d14;
     width: 60%;
-    height: 60vh;
+    height: 45vh;
     margin-left: 20%;
-    margin-top: 5%;
+    margin-top: 1%;
     border: 2px solid #710000;
     border-radius: 3%;
 }
@@ -126,4 +126,115 @@ label
 {
     color: white;
     margin-left: 4%;
+}
+.logo
+{
+    height: 155px;
+    width: 155px;
+}
+#opcao
+{
+    width: 63%;
+    height: 30px;
+    margin-left: 18%;
+    margin-top: 7%;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    h1, h2 {
+        margin-top: 30px;
+    }
+    #imgjogador {
+        width: 150px;
+        height: 150px;
+        margin-top: 30px;
+    }
+    button, .oii {
+        margin-top: 30px;
+        padding: 8px 16px;
+    }
+    #bingo-container {
+        gap: 10px;
+        margin-top: 30px;
+    }
+    .bingo-img {
+        width: 80px;
+        height: 80px;
+    }
+    p {
+        font-size: 18px;
+        margin-left: 3%;
+    }
+    .capa {
+        width: 80%;
+        height: 40vh;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+    #binladen {
+        width: 80px;
+        height: 80px;
+    }
+    label {
+        margin-left: 3%;
+    }
+    .logo {
+        height: 120px;
+        width: 120px;
+    }
+    #opcao {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        margin-top: 20px;
+    }
+    #imgjogador {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+    }
+    button, .oii {
+        margin-top: 20px;
+        padding: 6px 12px;
+    }
+    #bingo-container {
+        gap: 5px;
+        margin-top: 20px;
+    }
+    .bingo-img {
+        width: 60px;
+        height: 60px;
+    }
+    p {
+        font-size: 16px;
+        margin-left: 2%;
+    }
+    .capa {
+        width: 90%;
+        height: 35vh;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+    #binladen {
+        width: 60px;
+        height: 60px;
+    }
+    label {
+        margin-left: 2%;
+    }
+    .logo {
+        height: 100px;
+        width: 100px;
+    }
+    #opcao {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
 }
